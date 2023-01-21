@@ -3,12 +3,12 @@
 A new Flutter project.
 
 ## used packages
-bloc: ^8.1.0
-conditional_builder_null_safety: ^0.0.6
-dio: ^4.0.6
-flutter_bloc: ^8.1.1
-shared_preferences: ^2.0.16
-webview_flutter: ^4.0.1
+bloc: ^8.1.0 ,
+conditional_builder_null_safety: ^0.0.6 ,
+dio: ^4.0.6 ,
+flutter_bloc: ^8.1.1 ,
+shared_preferences: ^2.0.16 ,
+webview_flutter: ^4.0.1 ,
 
 | Light mode | Dark mode |
 | ------ | ------ |
