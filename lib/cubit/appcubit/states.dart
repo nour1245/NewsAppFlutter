@@ -39,3 +39,39 @@ class SearchErrorState extends NewsStates {
   final String error;
   SearchErrorState(this.error);
 }
+
+class AllBusinessLoadingState extends NewsStates {}
+
+class AllBusinessLoadedSuccessState extends NewsStates {}
+
+class AllBusinessErrorState extends NewsStates {
+  final String error;
+  AllBusinessErrorState(this.error);
+}
+
+class AllSportsLoadingState extends NewsStates {}
+
+class AllSportsLoadedSuccessState extends NewsStates {}
+
+class AllSportsErrorState extends NewsStates {
+  final String error;
+  AllSportsErrorState(this.error);
+}
+
+class AllScienceLoadingState extends NewsStates {}
+
+class AllScienceLoadedSuccessState extends NewsStates {}
+
+class AllScienceErrorState extends NewsStates {
+  final String error;
+  AllScienceErrorState(this.error);
+}
+
+class DATALoadingState extends NewsStates {}
+
+class DATALoadedSuccessState extends NewsStates {}
+
+class DATAErrorState extends NewsStates {
+  final String error;
+  DATAErrorState(this.error);
+}

@@ -49,6 +49,8 @@ class NewsCubit extends Cubit<NewsStates> {
   List sciences = [];
   List search = [];
 
+  List usNews = [];
+
 //business Data loading
   void getBusiness() {
     emit(BusinessLoadingState());
@@ -119,6 +121,24 @@ class NewsCubit extends Cubit<NewsStates> {
       emit(SearchLoadedSuccessState());
     }).catchError((error) {
       emit(SearchErrorState(error.toString()));
+    });
+  }
+
+  List usData = [];
+  void getSliderData() {
+    emit(DATALoadingState());
+    DioHelper.getData(
+      url: 'v2/top-headlines',
+      query: {
+        'country': 'eg',
+        'apiKey': apiKey,
+      },
+    ).then((value) {
+      usData = value.data['articles'];
+
+      emit(DATALoadedSuccessState());
+    }).catchError((error) {
+      emit(DATAErrorState(error.toString()));
     });
   }
 }
